@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz kontaktowy</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="normalize.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <main>
+    <header class="module__header">
+      <h1 class="module__h1--js">notatki z frontendu</h1>
+      <p class="module__header--hint">W main opakowywujemy unikalną treść dla danej strony</p>
+    </header>
+
+    <section>
+      <h2>O mnie</h2>
+      <img class="about-me__picture" src="images/angie.jpg" alt="Zdjęcie Angeliki Borko">
+      <p>Dziękuję za Twoje zainteresowanie. Proszę, wypełnij poniższy formularz, a ja odezwę się do Ciebie w ciągu 5 dni
+        roboczych.</p>
+    </section>
+
+    <section>
+      <article>
+
+        <h2 class="lesson__header"><a
+            href="https://edu.devstyle.pl/products/wtf-co-ten-frontend-3/categories/2153450611/posts/2169981558"
+            target="_blank">M06L03: HTML: formularze [07:52]</a></h2>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-01.jpg" alt=""
+            width="300">
+          <p>Formularze</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-02.jpg" alt=""
+            width="300">
+          <p>🗣 Pogadajmy ze światem</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-03.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;form&gt;</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-04.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;input /&gt;</p>
+          <p>jest znacznikiem samozamykającym</p>
+          <form>
+            <p>
+              <input />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-05.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">name="nazwaPola"</p>
+          <form>
+            <p>
+              <input name="firstName1" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-06.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">id="idPola"</p>
+          <p>* używamy do odniesienia się do label for=""</p>
+          <form>
+            <p>
+              <input name="firstName2" id="firstName2" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-07.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;label&gt;</p>
+          <p>etykieta do pola</p>
+          <form>
+            <p>
+              <label>Imię</label>
+              <input name="firstName3" id="firstName3" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-08.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">for="idPola"</p>
+          <p>ten atrybut przypisuje etykietę do konkretnego pola w formularzu, więc teraz po kliknięciu w
+            słowo "Imię", pole inputu się podświetli</p>
+          <form>
+            <p>
+              <label for="firstName4">Imię</label>
+              <input name="firstName4" id="firstName4" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-09.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="text"</p>
+          <p>text to domyślny typ inputa i w naszym przykładzie nic nie zmieni, będzie to zawsze
+            jednowierszowe okienko</p>
+          <form>
+            <p>
+              <label for="firstName5">Imię</label>
+              <input name="firstName5" id="firstName5" type="text" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-10.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">value="wartość"</p>
+          <p>atrybut pozwala na podanie domyślnej wartości</p>
+          <form>
+            <p>
+              <label for="firstName6">Imię</label>
+              <input name="firstName6" id="firstName6" type="text" value="Angelika" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-11.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">placeholder="Tekst podpowiedzi"</p>
+          <p>wyszarzony tekst jest wpisany w okienko inputa, znika po rozpoczęciu wpisywania</p>
+          <form>
+            <p>
+              <label for="firstName7">Imię</label>
+              <input name="firstName7" id="firstName7" type="text" placeholder="imię" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-12.jpg" alt=""
+            width="300">
+          <p>atrybut <i>placeholder</i> <b>nie zastępuje</b> elementu <i>label</i>, <span
+              class="lesson__tile--hint">label musi być zawsze</span></p>
+        </div>
+
+      </article>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section>
+      <article>
+        <h2 class="lesson__header"><a
+            href="https://edu.devstyle.pl/products/wtf-co-ten-frontend-3/categories/2153450611/posts/2169981559"
+            target="_blank">M06L04: Formularze: Fieldset, radio, checkbox, inputy tekstowe [11:16]</a></h2>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-13.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;fieldset&gt;</p>
+          <p>zbiór pól, służy do tego, żeby pogrupować pola w formularzu, np dane adresowe</p>
+          <form>
+            <fieldset></fieldset>
+          </form>
+
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-14.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;legend&gt;</p>
+          <p>legenda opisuje zbiór pól i dodaje się ją jako dziecko do fieldset</p>
+          <form>
+            <fieldset>
+              <legend>Dane osobowe:</legend>
+              <p>
+                <label for="firstName8">Imię</label>
+                <input name="firstName8" id="firstName8" type="text" placeholder="imię" />
+              </p>
+              <p>
+                <label for="lastName8">Nazwisko</label>
+                <input name="lastName8" id="lastName8" type="text" placeholder="nazwisko" />
+              </p>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Dane adresowe:</legend>
+              <p>
+                <label for="street">Ulica</label>
+                <input name="street" id="street" type="text" placeholder="ulica" />
+              </p>
+              <p>
+                <label for="city">Miejscowość</label>
+                <input name="city" id="city" type="text" placeholder="miejscowość" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-15.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="radio"</p>
+          <form>
+            <fieldset>
+              <legend>Ulubione lody:</legend>
+              <p>
+                <label><input type="radio" name="icecream" value="chocolate" /> Czekoladowe</label>
+              </p>
+              <p>
+                <label><input type="radio" name="icecream" value="checked" checked /> Domyślnie
+                  zaznaczona</label>
+              </p>
+              <p>
+                <label><input type="radio" name="icecream" value="vanilla" /> Waniliowe</label>
+              </p>
+              <p>
+                <label><input type="radio" name="icecream" value="strawberry" /> Truskawkowe</label>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-16.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="radio"</p>
+          <p>bo tak jak w starym radiu, tylko jedna opcja może być aktywna <span class="lesson__tile--hint">i
+              żeby tak się stało do każdej pozycji trzeba dodać atrybut name <b>o takiej samej nazwie, np
+                <u>name="icecream"</u></b></span></p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-17.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="checkbox"</p>
+          <form>
+            <fieldset>
+              <legend>Ulubione gry:</legend>
+              <p>
+                <label><input type="checkbox" name="play" value="cards" /> Karciane</label>
+              </p>
+              <p>
+                <label><input type="checkbox" name="play" value="checked" checked /> Domyślnie
+                  zaznaczona</label>
+              </p>
+              <p>
+                <label><input type="checkbox" name="play" value="team" /> Zespołowe</label>
+              </p>
+              <p>
+                <label><input type="checkbox" name="play" value="logical" /> Logiczne</label>
+              </p>
+              <p>* atrybut name grupuje odpowiedzi, więc musi być taki sam</p>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-18.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="tel"<br>
+            type="number"<br>
+            type="email
+          </p>
+          <form>
+            <fieldset>
+              <legend>Dane kontaktowe:</legend>
+              <p>
+                <label for="telephone">Numer telefonu</label>
+                <input name="telephone" id="telephone" type="tel" placeholder="numer telefonu" />
+              </p>
+              <p>
+                <label for="email">Adres email</label>
+                <input name="email" id="email" type="email" placeholder="email" />
+              </p>
+              <p>
+                <label for="amount">Ilość zamawianych sztuk</label>
+                <input name="amount" id="amount" type="number" placeholder="wybierz ilość" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+      </article>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section>
+      <article>
+        <h2 class="lesson__header"><a
+            href="https://edu.devstyle.pl/products/wtf-co-ten-frontend-3/categories/2153450611/posts/2169981560"
+            target="_blank">M06L05: Formularze: Range, pobieranie i ustalanie wartości, select, textarea
+            [14:40]</a></h2>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-19.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="range"</p>
+          <p>range to zakres, wartości <i>min</i> i <i>max</i> oznaczają początek i koniec zakresu,
+            <i>step</i> definiuje o ile suwak ma się przesuwać
+          </p>
+          <p class="lesson__tile--hint">tricki z java scriptem - odczytywanie wartości z suwaka [3:00]</p>
+          <form>
+            <fieldset>
+              <legend>Nowy zbiór pól</legend>
+              <p>
+                <label for="rate">Ocena</label>
+                <input name="rate" id="rate" type="range" min="0" max="100" step="15">
+              </p>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-20.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="password"</p>
+          <form>
+            <p>
+              <label for="enterPassword">Hasło</label>
+              <input name="enterPassword" id="enterPassword" type="password" placeholder="hasło">
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-21.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">type="file"</p>
+          <form>
+            <p>
+              <label for="avatar">Zdjęcie profilowe</label>
+              <input name="avatar" id="avatar" type="file">
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-22.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;select&gt;</p>
+          <form>
+            <p>
+              <label for="size">Wybierz rozmiar</label>
+              <select name="size" id="size"></select>
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-23.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;option&gt;</p>
+          <p>ten select jeszcze <b>nie jest gotowy</b>, nie ma atrybutów value!</p>
+          <form>
+            <p>
+              <label for="size2">Wybierz rozmiar</label>
+              <select name="size2" id="size2">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-24.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">value="wartość"</p>
+          <form>
+            <p>
+              <label for="size3">Wybierz rozmiar</label>
+              <select name="size3" id="size3">
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option selected value="selected">Ten z atrybutem "selected"</option>
+              </select>
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-25.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;textarea&gt;</p>
+          <form>
+            <p>
+              <label for="comment">Komentarz:</label>
+              <br>
+              <textarea name="comment" id="comment" placeholder="[14:00]"></textarea>
+            </p>
+          </form>
+        </div>
+
+      </article>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section>
+      <article>
+        <h2 class="lesson__header"><a
+            href="https://edu.devstyle.pl/products/wtf-co-ten-frontend-3/categories/2153450611/posts/2169981561"
+            target="_blank">M06L06: Formularze: Czym się różni GET od POST? [10:46]</a></h2>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-26.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;input type="submit"&gt;</p>
+          <p>jako jedyny nie ma znacznika "label", zamiast niego, można też użyć znaczika button, o ile będzie
+            to jedyny button na stronie.</p>
+          <form>
+            <p>
+              <input name="submitButton" id="submitButton" type="submit" value="input wyślij" />
+            </p>
+            <p>lub</p>
+            <p>
+              <button>przycisk wyśij</button>
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-27.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">&lt;form&gt;</p>
+          <p>zaczynamy wysyłać dane!!! [2:00]</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-28.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">action="url://z-którym-gadamy"</p>
+          <p>do tagu form musimy dodać adres, do którego będziemy przekazywać dane z formularza</p>
+          <p class="lesson__tile--code">&lt;form action="https://forms.cotenfrontend.pl"&gt;&lt;form/&gt;</p>
+          <p class="lesson__tile--hint">po wysłaniu formularza, w pasku adrsu pojawia się query string, który
+            przechowuje wszystkie wysłane wartości, aktualnie raczej się go ukrywa</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-29.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">method="post"</p>
+          <p>method jest atrybutem, który mówi o tym w jaki sposób wysyłany jest formularz.</p>
+          <p class="lesson__tile--code">&lt;form action="https://forms.cotenfrontend.pl"
+            method="post"&gt;&lt;form/&gt;</p>
+          <p>przy żądaniu typu POST, w adresie nie ma wartości, a zamiast query stringa, w Networku > Payload
+            można zobaczyć Form Data [6:30]</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-30.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">method="get"</p>
+          <p>domyślny typ żądania to GET, zawiera query string z parametrami</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-31.jpg" alt=""
+            width="300">
+          <p class="lesson__tile--code">enctype= "application/x-www-form-urlencoded" *<br>
+            enctype= "multipart/form-data" **</p>
+          <p>* wartość domyślna<br>
+            ** używamy, kiedy wysyłamy pliki</p>
+        </div>
+
+      </article>
+    </section>
+
+    <br>
+    <hr>
+    <br>
+
+    <section>
+      <article>
+        <h2 class="lesson__header"><a
+            href="https://edu.devstyle.pl/products/wtf-co-ten-frontend-3/categories/2153450611/posts/2169981562"
+            target="_blank">M06L07: Formularze: Walidacja [06:15]</a></h2>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-32.jpg" alt=""
+            width="300">
+          <p>Walidacja</p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-33.jpg" alt=""
+            width="300">
+          <p>required - pole z tym atrybutem będzie wymagane</p>
+          <form>
+            <p>
+              <label for="postalCode">Kod pocztowy</label>
+              <input name="postalCode" id="postalCode" type="text" placeholder="XX-XXX" required />
+              <input type="submit" value="wyśij" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-34.jpg" alt=""
+            width="300">
+          <p><span class="lesson__tile--code">pattern="[a-zA-Z0-9]+"</span>,
+            <br><i>gdzie [a-zA-Z0-9]+ wyrażenie regularne (regular expression)</i>
+          </p>
+          <p>służy do sprawdzania poprawności formatu m.in. kodu pocztowego lub wymaganej złożoności w
+            tworzonym haśle do konta. pattern wklejamy ze strony z podpowiedziami, np. <a
+              href="http://html5pattern.com/Names" target="_blank">http://html5pattern.com/Names</a></p>
+          <form>
+            <p>
+              <label for="postalCode">Kod pocztowy</label>
+              <input name="postalCode" id="postalCode" type="text" placeholder="XX-XXX" required
+                pattern="[0-9]{2}-[0-9]{3}" />
+              <input type="submit" value="wyśij" />
+            </p>
+          </form>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-35.jpg" alt=""
+            width="300">
+          <p>walidacja po stronie frontendu<br>
+            <strong>nie zastępuje</strong><br>
+            walidacji po stronie backendu
+          </p>
+        </div>
+
+        <div class="lesson__tile">
+          <img class="lesson__tile--img" src="images/6/WTF_M06L03  - Formularze/WTF_M06L03  - Formularze-36.jpg" alt=""
+            width="300">
+          <p>The end</p>
+        </div>
+
+
+
+      </article>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+  </main>
+
+  <footer>
+    <p>Formularz stworzyłam w ramach kursu <a href="https://cotenfrontend.pl/"
+        target="_blank">https://cotenfrontend.pl/</a></p>
+  </footer>
+</body>
+
+</html>
